@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'gestionPedidos',
 ]
 
 MIDDLEWARE = [
@@ -80,7 +81,7 @@ DATABASES = {
         "USER": "postgres",
         "PASSWORD": "Postgres09408",
         "HOST": "localhost",
-        "PORT": 5432
+        "PORT": 5432,
     }
 }
 
