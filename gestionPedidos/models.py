@@ -2,14 +2,14 @@ from django.db import models
 
 # Create your models here.
 
-class Clientes(models.Model):
+class Cliente(models.Model):
 
     nombre = models.CharField(max_length=30)
     direccion = models.CharField(max_length=50)
     email = models.EmailField()
     telefono = models.CharField(max_length=7)
 
-class Articulos(models.Model):
+class Articulo(models.Model):
 
     nombre = models.CharField(max_length=30)
     seccion = models.CharField(max_length=20)
@@ -19,7 +19,7 @@ class Articulos(models.Model):
 
         return "El artículo {}, pertenece a la sección {}, con un precio de {}".format(self.nombre,self.seccion,self.precio)
 
-class Pedidos(models.Model):
+class Pedido(models.Model):
 
     numero = models.IntegerField()
     fecha = models.DateField()
