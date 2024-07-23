@@ -6,8 +6,8 @@ class Cliente(models.Model):
 
     nombre = models.CharField(max_length=30)
     direccion = models.CharField(max_length=50)
-    email = models.EmailField()
-    telefono = models.CharField(max_length=7)
+    email = models.EmailField(blank=True, null=True)
+    telefono = models.CharField(max_length=7,verbose_name="celular")
 
 class Articulo(models.Model):
 
